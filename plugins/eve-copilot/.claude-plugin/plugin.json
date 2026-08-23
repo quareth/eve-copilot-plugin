@@ -1,6 +1,6 @@
 {
   "name": "eve-copilot",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A local, character-aware AI copilot for EVE Online—from first setup to live operations.",
   "author": {
     "name": "quareth",

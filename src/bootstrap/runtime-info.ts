@@ -2,7 +2,7 @@ import type { RuntimeInfo } from '../application/dto/runtime-info.js';
 
 export const APP_NAME = 'eve-copilot-mcp' as const;
 export const APP_TITLE = 'EVE Copilot MCP' as const;
-export const APP_VERSION = '0.1.4';
+export const APP_VERSION = '0.1.5';
 export const MCP_SDK_MAJOR = 2 as const;
 
 export type { RuntimeInfo } from '../application/dto/runtime-info.js';

@@ -1,6 +1,6 @@
 {
   "name": "eve-copilot-mcp",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Local MCP capability runtime installed by the EVE Copilot setup skill",
   "homepage": "https://github.com/quareth/eve-copilot-plugin",
   "repository": "https://github.com/quareth/eve-copilot-plugin",

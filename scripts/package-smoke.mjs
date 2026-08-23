@@ -159,7 +159,7 @@ try {
   const version = execFileSync(process.execPath, [executable, 'version'], {
     encoding: 'utf8',
   }).trim();
-  if (version !== 'EVE Copilot MCP 0.1.4') {
+  if (version !== 'EVE Copilot MCP 0.1.5') {
     throw new Error(`Unexpected installed version output: ${version}`);
   }
   const pluginLauncher = join(
@@ -189,9 +189,11 @@ try {
       EVE_COPILOT_DATA_DIR: join(fixtureRoot, 'installer-status-data'),
     },
   }));
-  if (installerStatus.expected_version !== '0.1.4'
+  if (installerStatus.expected_version !== '0.1.5'
     || installerStatus.runtime?.installed !== false
-    || installerStatus.prerequisites?.node?.supported !== true) {
+    || installerStatus.prerequisites?.node?.supported !== true
+    || installerStatus.prerequisites?.npm?.available !== true
+    || !/^\d+\.\d+\.\d+$/u.test(installerStatus.prerequisites.npm.version ?? '')) {
     throw new Error('Plugin installer status did not report the expected clean state.');
   }
   const setupConfig = join(fixtureRoot, 'setup-config.json');

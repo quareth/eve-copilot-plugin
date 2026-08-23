@@ -61,7 +61,7 @@ describe.skipIf(process.platform === 'win32')('serve lifecycle process behavior'
         SELECT value_json FROM system_state WHERE key = 'last_clean_shutdown'
       `).get() as { readonly value_json: string } | undefined;
       expect(row).toBeDefined();
-      expect(JSON.parse(row?.value_json ?? '{}')).toMatchObject({ version: '0.1.4' });
+      expect(JSON.parse(row?.value_json ?? '{}')).toMatchObject({ version: '0.1.5' });
     } finally {
       database.close();
     }

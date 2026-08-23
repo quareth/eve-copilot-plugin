@@ -78,9 +78,9 @@ async function installRuntime() {
       );
     }
 
-    run(npmExecutable(), ['ci', '--no-audit', '--no-fund'], stagingDirectory);
-    run(npmExecutable(), ['run', 'build'], stagingDirectory);
-    run(npmExecutable(), [
+    runNpm(['ci', '--no-audit', '--no-fund'], stagingDirectory);
+    runNpm(['run', 'build'], stagingDirectory);
+    runNpm([
       'prune', '--omit=dev', '--no-audit', '--no-fund',
     ], stagingDirectory);
     await rm(join(stagingDirectory, '.git'), { recursive: true, force: true });
@@ -116,6 +116,7 @@ async function installRuntime() {
 function runtimeStatus() {
   const nodeMajor = Number.parseInt(process.versions.node.split('.')[0] ?? '', 10);
   const installedVersion = runtimeVersion(currentEntry);
+  const npm = npmInvocation(['--version']);
   return {
     expected_version: expectedVersion,
     data_directory: dataDirectory,
@@ -131,7 +132,7 @@ function runtimeStatus() {
         version: process.versions.node,
         supported: nodeMajor >= 24 && nodeMajor < 27,
       },
-      npm: commandStatus(npmExecutable(), ['--version']),
+      npm: commandStatus(npm.executable, npm.args),
       git: commandStatus('git', ['--version']),
     },
   };
@@ -173,8 +174,17 @@ function run(executable, args, cwd = undefined, capture = false) {
   return result.stdout ?? '';
 }
 
-function npmExecutable() {
-  return process.platform === 'win32' ? 'npm.cmd' : 'npm';
+function runNpm(args, cwd) {
+  const npm = npmInvocation(args);
+  return run(npm.executable, npm.args, cwd);
+}
+
+function npmInvocation(args) {
+  if (process.platform !== 'win32') return { executable: 'npm', args };
+  return {
+    executable: nonEmpty(process.env.ComSpec) ?? 'cmd.exe',
+    args: ['/d', '/s', '/c', 'npm.cmd', ...args],
+  };
 }
 
 function defaultDataDirectory() {
