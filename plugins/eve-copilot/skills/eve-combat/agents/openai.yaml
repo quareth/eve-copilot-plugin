@@ -1,0 +1,8 @@
+interface:
+  display_name: "EVE Combat"
+  short_description: "Build skill-aware combat ships and fittings"
+  brand_color: "#C74634"
+  default_prompt: "Use $eve-combat to choose and validate a ship and fitting for my combat objective."
+
+policy:
+  allow_implicit_invocation: true

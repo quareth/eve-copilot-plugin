@@ -1,0 +1,6 @@
+export const DOGMA_ENGINE_REPOSITORY = 'https://github.com/EVEShipFit/dogma-engine';
+export const DOGMA_ENGINE_COMMIT = 'e8e536be341959a8abdc6f02600fe449bc6f4764';
+export const DOGMA_WASM_SHA256 = '8ab0ed0365e0a8b6cc097f46d6bf552786720100630b83de1b176263980865cf';
+export const DOGMA_JAVASCRIPT_SHA256 = '271eccacd1e6df09601b708dfd0af81e1e669209652e93fd1fe5844fcc4373ce';
+export const DOGMA_ADAPTER_VERSION = 1;
+export const DOGMA_CONFORMANCE_MATRIX_VERSION = 1;

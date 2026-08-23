@@ -1,0 +1,8 @@
+interface:
+  display_name: "EVE Exploration"
+  short_description: "Plan safer EVE exploration expeditions"
+  brand_color: "#1793D1"
+  default_prompt: "Use $eve-exploration to plan a data and relic expedition from my current ship."
+
+policy:
+  allow_implicit_invocation: true

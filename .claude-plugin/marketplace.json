@@ -1,0 +1,44 @@
+{
+  "name": "eve-copilot",
+  "owner": {
+    "name": "quareth",
+    "url": "https://github.com/quareth"
+  },
+  "description": "Character-aware AI guidance for EVE Online, powered by local skills, agents, and trusted EVE capabilities.",
+  "version": "0.1.4",
+  "plugins": [
+    {
+      "name": "eve-copilot",
+      "source": "./plugins/eve-copilot",
+      "description": "A local AI copilot with selectable faction persona for setup, exploration, combat, fitting, and mining—from preparation to live operations.",
+      "version": "0.1.4",
+      "author": {
+        "name": "quareth",
+        "url": "https://github.com/quareth"
+      },
+      "homepage": "https://github.com/quareth/eve-copilot-plugin",
+      "repository": "https://github.com/quareth/eve-copilot-plugin",
+      "license": "MIT",
+      "keywords": [
+        "eve-online",
+        "ai-copilot",
+        "character-aware",
+        "faction-persona",
+        "exploration",
+        "combat",
+        "mining",
+        "fitting",
+        "plugin",
+        "mcp"
+      ],
+      "category": "Games",
+      "tags": [
+        "eve-online",
+        "gaming",
+        "plugin",
+        "mcp"
+      ],
+      "strict": true
+    }
+  ]
+}

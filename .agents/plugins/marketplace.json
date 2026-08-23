@@ -1,0 +1,20 @@
+{
+  "name": "eve-copilot",
+  "interface": {
+    "displayName": "EVE Copilot"
+  },
+  "plugins": [
+    {
+      "name": "eve-copilot",
+      "source": {
+        "source": "local",
+        "path": "./plugins/eve-copilot"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Games"
+    }
+  ]
+}

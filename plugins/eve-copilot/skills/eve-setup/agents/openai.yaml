@@ -1,0 +1,5 @@
+interface:
+  display_name: "EVE Copilot Setup"
+  short_description: "Install and configure EVE Copilot safely"
+  brand_color: "#1793D1"
+  default_prompt: "Use $eve-setup to install and configure EVE Copilot on this computer."

@@ -1,0 +1,5 @@
+interface:
+  display_name: "EVE Copilot Uninstall"
+  short_description: "Remove EVE Copilot and its local data safely"
+  brand_color: "#8B2E2E"
+  default_prompt: "Use $eve-uninstall to completely remove EVE Copilot from this computer."

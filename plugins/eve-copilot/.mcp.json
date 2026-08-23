@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "eve-copilot": {
+      "command": "node",
+      "args": ["./scripts/launch-eve-copilot-mcp.mjs"],
+      "cwd": ".",
+      "env_vars": [
+        "PATH",
+        "HOME",
+        "LOCALAPPDATA",
+        "USERPROFILE",
+        "XDG_CONFIG_HOME",
+        "XDG_DATA_HOME",
+        "XDG_CACHE_HOME",
+        "EVE_COPILOT_ACTIONS_ENABLED",
+        "EVE_COPILOT_ACTION_FAMILIES",
+        "EVE_COPILOT_CONFIG",
+        "EVE_COPILOT_CREDENTIAL_BACKEND",
+        "EVE_COPILOT_DATABASE",
+        "EVE_COPILOT_DATA_DIR",
+        "EVE_COPILOT_DB_BUSY_TIMEOUT_MS",
+        "EVE_COPILOT_ESI_CACHE_MAX_BYTES",
+        "EVE_COPILOT_ESI_COMPATIBILITY_DATE",
+        "EVE_COPILOT_ESI_TIMEOUT_MS",
+        "EVE_COPILOT_ESI_USER_AGENT",
+        "EVE_COPILOT_EVE_CLIENT_ID",
+        "EVE_COPILOT_HTTP_MAX_RESPONSE_BYTES",
+        "EVE_COPILOT_LOG_FORMAT",
+        "EVE_COPILOT_LOG_LEVEL",
+        "EVE_COPILOT_OAUTH_SESSION_TTL_MS",
+        "EVE_COPILOT_PERSONA",
+        "EVE_COPILOT_REQUEST_TIMEOUT_MS",
+        "EVE_COPILOT_RUNTIME_DIR",
+        "EVE_COPILOT_SDE_DIR",
+        "EVE_COPILOT_SSO_REDIRECT_URI",
+        "EVE_COPILOT_SSO_TIMEOUT_MS"
+      ],
+      "startup_timeout_sec": 15,
+      "tool_timeout_sec": 120
+    }
+  }
+}

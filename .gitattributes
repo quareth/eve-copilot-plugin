@@ -1,0 +1,4 @@
+# Preserve the exact reviewed bytes of pinned fitting-engine artifacts on every OS.
+vendor/dogma-engine/esf_dogma_engine.js text eol=lf
+vendor/dogma-engine/LICENSE text eol=lf
+vendor/dogma-engine/esf_dogma_engine_bg.wasm binary

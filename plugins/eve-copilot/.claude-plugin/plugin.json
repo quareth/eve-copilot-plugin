@@ -1,0 +1,27 @@
+{
+  "name": "eve-copilot",
+  "version": "0.1.4",
+  "description": "A local, character-aware AI copilot for EVE Online—from first setup to live operations.",
+  "author": {
+    "name": "quareth",
+    "url": "https://github.com/quareth"
+  },
+  "homepage": "https://github.com/quareth/eve-copilot-plugin",
+  "repository": "https://github.com/quareth/eve-copilot-plugin",
+  "license": "MIT",
+  "keywords": [
+    "eve-online",
+    "ai-copilot",
+    "character-aware",
+    "faction-persona",
+    "exploration",
+    "combat",
+    "mining",
+    "fitting",
+    "pvp",
+    "pve",
+    "plugin",
+    "mcp"
+  ],
+  "mcpServers": "./.claude-mcp.json"
+}

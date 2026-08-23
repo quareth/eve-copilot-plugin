@@ -1,0 +1,8 @@
+interface:
+  display_name: "EVE Mining"
+  short_description: "Plan and operate safer EVE mining campaigns"
+  brand_color: "#F2C94C"
+  default_prompt: "Use $eve-mining to plan a mining operation for my selected character and objective."
+
+policy:
+  allow_implicit_invocation: true

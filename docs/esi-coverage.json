@@ -1,0 +1,2988 @@
+{
+  "snapshot": {
+    "source": "https://esi.evetech.net/meta/openapi.json",
+    "compatibility_date": "2026-08-18",
+    "byte_size": 614466,
+    "sha256": "1d7bf362256bff980f72e4dd0aa7917da9431383b0b29f6fbc44f30b1d1d0b02",
+    "operation_count": 233
+  },
+  "summary": {
+    "total_operations": 233,
+    "dispositions": {
+      "implemented_semantic": 67,
+      "implemented_bounded_low_level": 166,
+      "excluded_policy": 0,
+      "planned": 0
+    },
+    "accounted": {
+      "count": 233,
+      "denominator": 233,
+      "percent": 100
+    },
+    "allowed_execution": {
+      "count": 233,
+      "denominator": 233,
+      "percent": 100
+    },
+    "semantic": {
+      "count": 67,
+      "denominator": 233,
+      "percent": 28.76
+    },
+    "by_class": [
+      {
+        "key": "action",
+        "total": 26,
+        "semantic": 0,
+        "bounded": 26,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      },
+      {
+        "key": "read",
+        "total": 207,
+        "semantic": 67,
+        "bounded": 140,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      }
+    ],
+    "by_pack": [
+      {
+        "key": "character_communication",
+        "total": 53,
+        "semantic": 21,
+        "bounded": 32,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      },
+      {
+        "key": "eve_client_ui",
+        "total": 5,
+        "semantic": 0,
+        "bounded": 5,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      },
+      {
+        "key": "inventory_economy",
+        "total": 50,
+        "semantic": 25,
+        "bounded": 25,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      },
+      {
+        "key": "organizations_operations",
+        "total": 61,
+        "semantic": 6,
+        "bounded": 55,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      },
+      {
+        "key": "universe_static",
+        "total": 41,
+        "semantic": 7,
+        "bounded": 34,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      },
+      {
+        "key": "warfare_intelligence",
+        "total": 23,
+        "semantic": 8,
+        "bounded": 15,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      }
+    ],
+    "by_access": [
+      {
+        "key": "alliance",
+        "total": 2,
+        "semantic": 0,
+        "bounded": 2,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      },
+      {
+        "key": "character",
+        "total": 82,
+        "semantic": 35,
+        "bounded": 47,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      },
+      {
+        "key": "corporation",
+        "total": 48,
+        "semantic": 12,
+        "bounded": 36,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      },
+      {
+        "key": "fleet",
+        "total": 13,
+        "semantic": 0,
+        "bounded": 13,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      },
+      {
+        "key": "public",
+        "total": 88,
+        "semantic": 20,
+        "bounded": 68,
+        "excluded": 0,
+        "planned": 0,
+        "accounted_percent": 100,
+        "allowed_execution_percent": 100
+      }
+    ]
+  },
+  "operations": [
+    {
+      "operation_id": "DeleteCharactersCharacterIdContacts",
+      "method": "DELETE",
+      "path": "/characters/{character_id}/contacts",
+      "tag": "Contacts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.delete_characters_character_id_contacts"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "DeleteCharactersCharacterIdFittingsFittingId",
+      "method": "DELETE",
+      "path": "/characters/{character_id}/fittings/{fitting_id}",
+      "tag": "Fittings",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.delete_characters_character_id_fittings_fitting_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "DeleteCharactersCharacterIdMailLabelsLabelId",
+      "method": "DELETE",
+      "path": "/characters/{character_id}/mail/labels/{label_id}",
+      "tag": "Mail",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.delete_characters_character_id_mail_labels_label_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "DeleteCharactersCharacterIdMailMailId",
+      "method": "DELETE",
+      "path": "/characters/{character_id}/mail/{mail_id}",
+      "tag": "Mail",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.delete_characters_character_id_mail_mail_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "DeleteFleetsFleetIdMembersMemberId",
+      "method": "DELETE",
+      "path": "/fleets/{fleet_id}/members/{member_id}",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.delete_fleets_fleet_id_members_member_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "DeleteFleetsFleetIdSquadsSquadId",
+      "method": "DELETE",
+      "path": "/fleets/{fleet_id}/squads/{squad_id}",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.delete_fleets_fleet_id_squads_squad_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "DeleteFleetsFleetIdWingsWingId",
+      "method": "DELETE",
+      "path": "/fleets/{fleet_id}/wings/{wing_id}",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.delete_fleets_fleet_id_wings_wing_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "GetAlliances",
+      "method": "GET",
+      "path": "/alliances",
+      "tag": "Alliance",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_alliances"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetAlliancesAllianceId",
+      "method": "GET",
+      "path": "/alliances/{alliance_id}",
+      "tag": "Alliance",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_alliances_alliance_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetAlliancesAllianceIdContacts",
+      "method": "GET",
+      "path": "/alliances/{alliance_id}/contacts",
+      "tag": "Contacts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_alliances_alliance_id_contacts"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetAlliancesAllianceIdContactsLabels",
+      "method": "GET",
+      "path": "/alliances/{alliance_id}/contacts/labels",
+      "tag": "Contacts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_alliances_alliance_id_contacts_labels"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetAlliancesAllianceIdCorporations",
+      "method": "GET",
+      "path": "/alliances/{alliance_id}/corporations",
+      "tag": "Alliance",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_alliances_alliance_id_corporations"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetAlliancesAllianceIdIcons",
+      "method": "GET",
+      "path": "/alliances/{alliance_id}/icons",
+      "tag": "Alliance",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_alliances_alliance_id_icons"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersAccessListsDetail",
+      "method": "GET",
+      "path": "/characters/{character_id}/access-lists/{access_list_id}",
+      "tag": "Access List",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_access_lists_detail"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersAccessListsListing",
+      "method": "GET",
+      "path": "/characters/{character_id}/access-lists",
+      "tag": "Access List",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_access_lists_listing"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdAgentsResearch",
+      "method": "GET",
+      "path": "/characters/{character_id}/agents_research",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_character_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdAssets",
+      "method": "GET",
+      "path": "/characters/{character_id}/assets",
+      "tag": "Assets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "analyze_fitting_access",
+        "estimate_character_wealth",
+        "fittings.analyze_changes",
+        "list_owned_ships",
+        "search_assets"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdAttributes",
+      "method": "GET",
+      "path": "/characters/{character_id}/attributes",
+      "tag": "Skills",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_character_profile"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdBlueprints",
+      "method": "GET",
+      "path": "/characters/{character_id}/blueprints",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_blueprints"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdCalendar",
+      "method": "GET",
+      "path": "/characters/{character_id}/calendar",
+      "tag": "Calendar",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_calendar"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdCalendarEventId",
+      "method": "GET",
+      "path": "/characters/{character_id}/calendar/{event_id}",
+      "tag": "Calendar",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_calendar_event_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdCalendarEventIdAttendees",
+      "method": "GET",
+      "path": "/characters/{character_id}/calendar/{event_id}/attendees",
+      "tag": "Calendar",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_calendar_event_id_attendees"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdClones",
+      "method": "GET",
+      "path": "/characters/{character_id}/clones",
+      "tag": "Clones",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_clones_and_implants"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdContacts",
+      "method": "GET",
+      "path": "/characters/{character_id}/contacts",
+      "tag": "Contacts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "list_contacts"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdContactsLabels",
+      "method": "GET",
+      "path": "/characters/{character_id}/contacts/labels",
+      "tag": "Contacts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "list_contacts"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdContracts",
+      "method": "GET",
+      "path": "/characters/{character_id}/contracts",
+      "tag": "Contracts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "list_contracts"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdContractsContractIdBids",
+      "method": "GET",
+      "path": "/characters/{character_id}/contracts/{contract_id}/bids",
+      "tag": "Contracts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_contracts_contract_id_bids"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdContractsContractIdItems",
+      "method": "GET",
+      "path": "/characters/{character_id}/contracts/{contract_id}/items",
+      "tag": "Contracts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_contracts_contract_id_items"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdCorporationhistory",
+      "method": "GET",
+      "path": "/characters/{character_id}/corporationhistory",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_character_profile"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdFatigue",
+      "method": "GET",
+      "path": "/characters/{character_id}/fatigue",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_character_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdFittings",
+      "method": "GET",
+      "path": "/characters/{character_id}/fittings",
+      "tag": "Fittings",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "analyze_fitting_access",
+        "fittings.analyze_changes",
+        "list_fittings"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdFleet",
+      "method": "GET",
+      "path": "/characters/{character_id}/fleet",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_fleet_overview"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdFwStats",
+      "method": "GET",
+      "path": "/characters/{character_id}/fw/stats",
+      "tag": "Faction Warfare",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_fw_stats"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdImplants",
+      "method": "GET",
+      "path": "/characters/{character_id}/implants",
+      "tag": "Clones",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_clones_and_implants"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdIndustryJobs",
+      "method": "GET",
+      "path": "/characters/{character_id}/industry/jobs",
+      "tag": "Industry",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "list_industry_jobs"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdKillmailsRecent",
+      "method": "GET",
+      "path": "/characters/{character_id}/killmails/recent",
+      "tag": "Killmails",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_recent_killmails"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdLocation",
+      "method": "GET",
+      "path": "/characters/{character_id}/location",
+      "tag": "Location",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "character.overview",
+        "character.current_location"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdLoyaltyPoints",
+      "method": "GET",
+      "path": "/characters/{character_id}/loyalty/points",
+      "tag": "Loyalty",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_loyalty_points"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdMail",
+      "method": "GET",
+      "path": "/characters/{character_id}/mail",
+      "tag": "Mail",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "list_eve_mail"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdMailLabels",
+      "method": "GET",
+      "path": "/characters/{character_id}/mail/labels",
+      "tag": "Mail",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "list_eve_mail"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdMailLists",
+      "method": "GET",
+      "path": "/characters/{character_id}/mail/lists",
+      "tag": "Mail",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "list_eve_mail"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdMailMailId",
+      "method": "GET",
+      "path": "/characters/{character_id}/mail/{mail_id}",
+      "tag": "Mail",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_mail_mail_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdMedals",
+      "method": "GET",
+      "path": "/characters/{character_id}/medals",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_medals"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdMining",
+      "method": "GET",
+      "path": "/characters/{character_id}/mining",
+      "tag": "Industry",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_mining_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdNotifications",
+      "method": "GET",
+      "path": "/characters/{character_id}/notifications",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_notifications"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdNotificationsContacts",
+      "method": "GET",
+      "path": "/characters/{character_id}/notifications/contacts",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_notifications"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdOnline",
+      "method": "GET",
+      "path": "/characters/{character_id}/online",
+      "tag": "Location",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_character_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdOrders",
+      "method": "GET",
+      "path": "/characters/{character_id}/orders",
+      "tag": "Market",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "list_my_market_orders"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdOrdersHistory",
+      "method": "GET",
+      "path": "/characters/{character_id}/orders/history",
+      "tag": "Market",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "list_my_market_orders"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdPlanets",
+      "method": "GET",
+      "path": "/characters/{character_id}/planets",
+      "tag": "Planetary Interaction",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_planetary_colonies"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdPlanetsPlanetId",
+      "method": "GET",
+      "path": "/characters/{character_id}/planets/{planet_id}",
+      "tag": "Planetary Interaction",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_planets_planet_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdPortrait",
+      "method": "GET",
+      "path": "/characters/{character_id}/portrait",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_portrait"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdRoles",
+      "method": "GET",
+      "path": "/characters/{character_id}/roles",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_roles"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdSearch",
+      "method": "GET",
+      "path": "/characters/{character_id}/search",
+      "tag": "Search",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_search"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdShip",
+      "method": "GET",
+      "path": "/characters/{character_id}/ship",
+      "tag": "Location",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "character.current_ship",
+        "character.overview",
+        "fittings.analyze_changes"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdSkillqueue",
+      "method": "GET",
+      "path": "/characters/{character_id}/skillqueue",
+      "tag": "Skills",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_skill_queue"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdSkills",
+      "method": "GET",
+      "path": "/characters/{character_id}/skills",
+      "tag": "Skills",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "analyze_fitting_access",
+        "check_requirements",
+        "fittings.analyze_changes",
+        "get_skills"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdStandings",
+      "method": "GET",
+      "path": "/characters/{character_id}/standings",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_standings"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdTitles",
+      "method": "GET",
+      "path": "/characters/{character_id}/titles",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_character_id_titles"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdWallet",
+      "method": "GET",
+      "path": "/characters/{character_id}/wallet",
+      "tag": "Wallet",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "estimate_character_wealth",
+        "get_wallet_summary"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdWalletJournal",
+      "method": "GET",
+      "path": "/characters/{character_id}/wallet/journal",
+      "tag": "Wallet",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_wallet_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCharacterIdWalletTransactions",
+      "method": "GET",
+      "path": "/characters/{character_id}/wallet/transactions",
+      "tag": "Wallet",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_wallet_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersCosmeticsSkinr",
+      "method": "GET",
+      "path": "/characters/{character_id}/cosmetics/skinr",
+      "tag": "Cosmetics",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_cosmetics_skinr"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersCosmeticsSkinrComponents",
+      "method": "GET",
+      "path": "/characters/{character_id}/cosmetics/skinr/components",
+      "tag": "Cosmetics",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_cosmetics_skinr_components"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersDetail",
+      "method": "GET",
+      "path": "/characters/{character_id}",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "character.overview",
+        "get_character_profile"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCharactersFreelanceJobsListing",
+      "method": "GET",
+      "path": "/characters/{character_id}/freelance-jobs",
+      "tag": "Freelance Jobs",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_freelance_jobs_listing"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersFreelanceJobsParticipation",
+      "method": "GET",
+      "path": "/characters/{character_id}/freelance-jobs/{job_id}/participation",
+      "tag": "Freelance Jobs",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_freelance_jobs_participation"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersMercenaryTacticalOperationsDetail",
+      "method": "GET",
+      "path": "/characters/{character_id}/mercenary-tactical-operations/{operation_id}",
+      "tag": "Activities",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_mercenary_tactical_operations_detail"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersMercenaryTacticalOperationsListing",
+      "method": "GET",
+      "path": "/characters/{character_id}/mercenary-tactical-operations",
+      "tag": "Activities",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_mercenary_tactical_operations_listing"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersMilitaryCampaignsObjectivesListing",
+      "method": "GET",
+      "path": "/characters/{character_id}/military-campaigns/objectives",
+      "tag": "Military Campaigns",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_military_campaigns_objectives_listing"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersMilitaryCampaignsObjectivesParticipation",
+      "method": "GET",
+      "path": "/characters/{character_id}/military-campaigns/objectives/{objective_id}",
+      "tag": "Military Campaigns",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_military_campaigns_objectives_participation"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersParagonHubSkinr",
+      "method": "GET",
+      "path": "/characters/{character_id}/paragon-hub/skinr",
+      "tag": "Paragon Hub",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_paragon_hub_skinr"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersStructuresMercenaryDensDetail",
+      "method": "GET",
+      "path": "/characters/{character_id}/structures/mercenary-dens/{mercenary_den_id}",
+      "tag": "Structures",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_structures_mercenary_dens_detail"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCharactersStructuresMercenaryDensListing",
+      "method": "GET",
+      "path": "/characters/{character_id}/structures/mercenary-dens",
+      "tag": "Structures",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_characters_structures_mercenary_dens_listing"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetContractsPublicBidsContractId",
+      "method": "GET",
+      "path": "/contracts/public/bids/{contract_id}",
+      "tag": "Contracts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_contracts_public_bids_contract_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetContractsPublicItemsContractId",
+      "method": "GET",
+      "path": "/contracts/public/items/{contract_id}",
+      "tag": "Contracts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_contracts_public_items_contract_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetContractsPublicRegionId",
+      "method": "GET",
+      "path": "/contracts/public/{region_id}",
+      "tag": "Contracts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_contracts_public_region_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationCorporationIdMiningExtractions",
+      "method": "GET",
+      "path": "/corporation/{corporation_id}/mining/extractions",
+      "tag": "Industry",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporation_corporation_id_mining_extractions"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationCorporationIdMiningObservers",
+      "method": "GET",
+      "path": "/corporation/{corporation_id}/mining/observers",
+      "tag": "Industry",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporation_corporation_id_mining_observers"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationCorporationIdMiningObserversObserverId",
+      "method": "GET",
+      "path": "/corporation/{corporation_id}/mining/observers/{observer_id}",
+      "tag": "Industry",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporation_corporation_id_mining_observers_observer_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationId",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_overview"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdAlliancehistory",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/alliancehistory",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_alliancehistory"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdAssets",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/assets",
+      "tag": "Assets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_assets"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdBlueprints",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/blueprints",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_blueprints"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdContacts",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/contacts",
+      "tag": "Contacts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_contacts"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdContactsLabels",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/contacts/labels",
+      "tag": "Contacts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_contacts_labels"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdContainersLogs",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/containers/logs",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_containers_logs"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdContracts",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/contracts",
+      "tag": "Contracts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_contracts"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdContractsContractIdBids",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/contracts/{contract_id}/bids",
+      "tag": "Contracts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_contracts_contract_id_bids"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdContractsContractIdItems",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/contracts/{contract_id}/items",
+      "tag": "Contracts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_contracts_contract_id_items"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdCustomsOffices",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/customs_offices",
+      "tag": "Planetary Interaction",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_customs_offices"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdDivisions",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/divisions",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_overview"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdFacilities",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/facilities",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_facilities"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdFwStats",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/fw/stats",
+      "tag": "Faction Warfare",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_fw_stats"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdIcons",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/icons",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_icons"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdIndustryJobs",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/industry/jobs",
+      "tag": "Industry",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_industry"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdKillmailsRecent",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/killmails/recent",
+      "tag": "Killmails",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_killmails_recent"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdMedals",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/medals",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_medals"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdMedalsIssued",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/medals/issued",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_medals_issued"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdMembers",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/members",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_membership"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdMembersLimit",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/members/limit",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_members_limit"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdMembersTitles",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/members/titles",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_members_titles"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdMembertracking",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/membertracking",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_membertracking"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdOrders",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/orders",
+      "tag": "Market",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_market_orders"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdOrdersHistory",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/orders/history",
+      "tag": "Market",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_market_orders"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdRoles",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/roles",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_roles"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdRolesHistory",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/roles/history",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_roles_history"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdShareholders",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/shareholders",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_shareholders"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdStandings",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/standings",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_standings"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdStarbases",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/starbases",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_starbases"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdStarbasesStarbaseId",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/starbases/{starbase_id}",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_starbases_starbase_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdStructures",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/structures",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_structures"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdTitles",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/titles",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_corporation_id_titles"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdWallets",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/wallets",
+      "tag": "Wallet",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_wallet_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdWalletsDivisionJournal",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/wallets/{division}/journal",
+      "tag": "Wallet",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_wallet_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsCorporationIdWalletsDivisionTransactions",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/wallets/{division}/transactions",
+      "tag": "Wallet",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_wallet_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsFreelanceJobsListing",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/freelance-jobs",
+      "tag": "Freelance Jobs",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_freelance_jobs_listing"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsFreelanceJobsParticipants",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/freelance-jobs/{job_id}/participants",
+      "tag": "Freelance Jobs",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_freelance_jobs_participants"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsNpccorps",
+      "method": "GET",
+      "path": "/corporations/npccorps",
+      "tag": "Corporation",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_npccorps"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsProjectsContribution",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/projects/{project_id}/contribution/{character_id}",
+      "tag": "Corporation Projects",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_projects_contribution"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsProjectsContributors",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/projects/{project_id}/contributors",
+      "tag": "Corporation Projects",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_projects_contributors"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsProjectsDetail",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/projects/{project_id}",
+      "tag": "Corporation Projects",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_projects_detail"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsProjectsListing",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/projects",
+      "tag": "Corporation Projects",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_corporation_projects"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetCorporationsStructuresSkyhooksDetail",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/structures/skyhooks/{skyhook_id}",
+      "tag": "Structures",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_structures_skyhooks_detail"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsStructuresSkyhooksListing",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/structures/skyhooks",
+      "tag": "Structures",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_structures_skyhooks_listing"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsStructuresSovereigntyHubsDetail",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/structures/sovereignty-hubs/{sovereignty_hub_id}",
+      "tag": "Structures",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_structures_sovereignty_hubs_detail"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCorporationsStructuresSovereigntyHubsListing",
+      "method": "GET",
+      "path": "/corporations/{corporation_id}/structures/sovereignty-hubs",
+      "tag": "Structures",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_corporations_structures_sovereignty_hubs_listing"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetCosmeticsSkinr",
+      "method": "GET",
+      "path": "/cosmetics/skinr/{skinr_id}",
+      "tag": "Cosmetics",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_cosmetics_skinr"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetDogmaAttributes",
+      "method": "GET",
+      "path": "/dogma/attributes",
+      "tag": "Dogma",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_dogma_attributes"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetDogmaAttributesAttributeId",
+      "method": "GET",
+      "path": "/dogma/attributes/{attribute_id}",
+      "tag": "Dogma",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_dogma_attributes_attribute_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetDogmaDynamicItemsTypeIdItemId",
+      "method": "GET",
+      "path": "/dogma/dynamic/items/{type_id}/{item_id}",
+      "tag": "Dogma",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_dogma_dynamic_items_type_id_item_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetDogmaEffects",
+      "method": "GET",
+      "path": "/dogma/effects",
+      "tag": "Dogma",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_dogma_effects"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetDogmaEffectsEffectId",
+      "method": "GET",
+      "path": "/dogma/effects/{effect_id}",
+      "tag": "Dogma",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_dogma_effects_effect_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetFleetsFleetId",
+      "method": "GET",
+      "path": "/fleets/{fleet_id}",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_fleets_fleet_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetFleetsFleetIdMembers",
+      "method": "GET",
+      "path": "/fleets/{fleet_id}/members",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_fleets_fleet_id_members"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetFleetsFleetIdWings",
+      "method": "GET",
+      "path": "/fleets/{fleet_id}/wings",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_fleets_fleet_id_wings"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetFreelanceJobsDetail",
+      "method": "GET",
+      "path": "/freelance-jobs/{job_id}",
+      "tag": "Freelance Jobs",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_freelance_jobs_detail"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetFreelanceJobsListing",
+      "method": "GET",
+      "path": "/freelance-jobs",
+      "tag": "Freelance Jobs",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_freelance_jobs_listing"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetFwLeaderboards",
+      "method": "GET",
+      "path": "/fw/leaderboards",
+      "tag": "Faction Warfare",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_fw_leaderboards"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetFwLeaderboardsCharacters",
+      "method": "GET",
+      "path": "/fw/leaderboards/characters",
+      "tag": "Faction Warfare",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_fw_leaderboards_characters"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetFwLeaderboardsCorporations",
+      "method": "GET",
+      "path": "/fw/leaderboards/corporations",
+      "tag": "Faction Warfare",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_fw_leaderboards_corporations"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetFwStats",
+      "method": "GET",
+      "path": "/fw/stats",
+      "tag": "Faction Warfare",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_warfare_overview"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetFwSystems",
+      "method": "GET",
+      "path": "/fw/systems",
+      "tag": "Faction Warfare",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_warfare_overview"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetFwWars",
+      "method": "GET",
+      "path": "/fw/wars",
+      "tag": "Faction Warfare",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_warfare_overview"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetIncursions",
+      "method": "GET",
+      "path": "/incursions",
+      "tag": "Incursions",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_public_activity_intelligence",
+        "get_warfare_overview"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetIndustryFacilities",
+      "method": "GET",
+      "path": "/industry/facilities",
+      "tag": "Industry",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_industry_facilities"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetIndustrySystems",
+      "method": "GET",
+      "path": "/industry/systems",
+      "tag": "Industry",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_industry_systems"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetInsurancePrices",
+      "method": "GET",
+      "path": "/insurance/prices",
+      "tag": "Insurance",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_insurance_prices"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetKillmailsKillmailIdKillmailHash",
+      "method": "GET",
+      "path": "/killmails/{killmail_id}/{killmail_hash}",
+      "tag": "Killmails",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_killmails_killmail_id_killmail_hash"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetLoyaltyStoresCorporationIdOffers",
+      "method": "GET",
+      "path": "/loyalty/stores/{corporation_id}/offers",
+      "tag": "Loyalty",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_loyalty_stores_corporation_id_offers"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMarketsGroups",
+      "method": "GET",
+      "path": "/markets/groups",
+      "tag": "Market",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_markets_groups"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMarketsGroupsMarketGroupId",
+      "method": "GET",
+      "path": "/markets/groups/{market_group_id}",
+      "tag": "Market",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_markets_groups_market_group_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMarketsPrices",
+      "method": "GET",
+      "path": "/markets/prices",
+      "tag": "Market",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "estimate_character_wealth",
+        "get_market_price"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetMarketsRegionIdHistory",
+      "method": "GET",
+      "path": "/markets/{region_id}/history",
+      "tag": "Market",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_market_history"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetMarketsRegionIdOrders",
+      "method": "GET",
+      "path": "/markets/{region_id}/orders",
+      "tag": "Market",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "compare_market_orders"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetMarketsRegionIdTypes",
+      "method": "GET",
+      "path": "/markets/{region_id}/types",
+      "tag": "Market",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_markets_region_id_types"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMarketsStructuresStructureId",
+      "method": "GET",
+      "path": "/markets/structures/{structure_id}",
+      "tag": "Market",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_markets_structures_structure_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMetaChangelog",
+      "method": "GET",
+      "path": "/meta/changelog",
+      "tag": "Meta",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_meta_changelog"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMetaCompatibilityDates",
+      "method": "GET",
+      "path": "/meta/compatibility-dates",
+      "tag": "Meta",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_meta_compatibility_dates"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMetaName",
+      "method": "GET",
+      "path": "/meta/name",
+      "tag": "Meta",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_meta_name"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMetaStatus",
+      "method": "GET",
+      "path": "/meta/status",
+      "tag": "Meta",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_meta_status"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMilitaryCampaignsDetail",
+      "method": "GET",
+      "path": "/military-campaigns/{campaign_id}",
+      "tag": "Military Campaigns",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_military_campaigns_detail"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMilitaryCampaignsListing",
+      "method": "GET",
+      "path": "/military-campaigns",
+      "tag": "Military Campaigns",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_military_campaigns_listing"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMilitaryCampaignsObjectivesDetail",
+      "method": "GET",
+      "path": "/military-campaigns/{campaign_id}/objectives/{objective_id}",
+      "tag": "Military Campaigns",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_military_campaigns_objectives_detail"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetMilitaryCampaignsObjectivesListing",
+      "method": "GET",
+      "path": "/military-campaigns/{campaign_id}/objectives",
+      "tag": "Military Campaigns",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_military_campaigns_objectives_listing"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetParagonHubSkinr",
+      "method": "GET",
+      "path": "/paragon-hub/skinr",
+      "tag": "Paragon Hub",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_paragon_hub_skinr"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetParagonHubSkinrAlliances",
+      "method": "GET",
+      "path": "/paragon-hub/skinr/alliances/{alliance_id}",
+      "tag": "Paragon Hub",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_paragon_hub_skinr_alliances"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetParagonHubSkinrCharacters",
+      "method": "GET",
+      "path": "/paragon-hub/skinr/characters/{character_id}",
+      "tag": "Paragon Hub",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_paragon_hub_skinr_characters"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetParagonHubSkinrCorporations",
+      "method": "GET",
+      "path": "/paragon-hub/skinr/corporations/{corporation_id}",
+      "tag": "Paragon Hub",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_paragon_hub_skinr_corporations"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetSkyhooksRaidable",
+      "method": "GET",
+      "path": "/skyhooks/raidable",
+      "tag": "Activities",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_skyhooks_raidable"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetSovereigntyCampaigns",
+      "method": "GET",
+      "path": "/sovereignty/campaigns",
+      "tag": "Sovereignty",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_sovereignty_overview"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetSovereigntySystems",
+      "method": "GET",
+      "path": "/sovereignty/systems",
+      "tag": "Sovereignty",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_sovereignty_overview"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetStatus",
+      "method": "GET",
+      "path": "/status",
+      "tag": "Status",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_server_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetUniverseAncestries",
+      "method": "GET",
+      "path": "/universe/ancestries",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_ancestries"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseAsteroidBeltsAsteroidBeltId",
+      "method": "GET",
+      "path": "/universe/asteroid_belts/{asteroid_belt_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_asteroid_belts_asteroid_belt_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseBloodlines",
+      "method": "GET",
+      "path": "/universe/bloodlines",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_bloodlines"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseCategories",
+      "method": "GET",
+      "path": "/universe/categories",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_categories"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseCategoriesCategoryId",
+      "method": "GET",
+      "path": "/universe/categories/{category_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_categories_category_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseConstellations",
+      "method": "GET",
+      "path": "/universe/constellations",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_constellations"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseConstellationsConstellationId",
+      "method": "GET",
+      "path": "/universe/constellations/{constellation_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_constellations_constellation_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseFactions",
+      "method": "GET",
+      "path": "/universe/factions",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_factions"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseGraphics",
+      "method": "GET",
+      "path": "/universe/graphics",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_graphics"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseGraphicsGraphicId",
+      "method": "GET",
+      "path": "/universe/graphics/{graphic_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_graphics_graphic_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseGroups",
+      "method": "GET",
+      "path": "/universe/groups",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_groups"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseGroupsGroupId",
+      "method": "GET",
+      "path": "/universe/groups/{group_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_groups_group_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseMoonsMoonId",
+      "method": "GET",
+      "path": "/universe/moons/{moon_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_moons_moon_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniversePlanetsPlanetId",
+      "method": "GET",
+      "path": "/universe/planets/{planet_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_planets_planet_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseRaces",
+      "method": "GET",
+      "path": "/universe/races",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_races"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseRegions",
+      "method": "GET",
+      "path": "/universe/regions",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_regions"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseRegionsRegionId",
+      "method": "GET",
+      "path": "/universe/regions/{region_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_regions_region_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseSchematicsSchematicId",
+      "method": "GET",
+      "path": "/universe/schematics/{schematic_id}",
+      "tag": "Planetary Interaction",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_schematics_schematic_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseStargatesStargateId",
+      "method": "GET",
+      "path": "/universe/stargates/{stargate_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_stargates_stargate_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseStarsStarId",
+      "method": "GET",
+      "path": "/universe/stars/{star_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_stars_star_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseStationsStationId",
+      "method": "GET",
+      "path": "/universe/stations/{station_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_stations_station_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseStructures",
+      "method": "GET",
+      "path": "/universe/structures",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_structures"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseStructuresStructureId",
+      "method": "GET",
+      "path": "/universe/structures/{structure_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_structures_structure_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseSystemJumps",
+      "method": "GET",
+      "path": "/universe/system_jumps",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_public_activity_intelligence",
+        "get_server_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetUniverseSystemKills",
+      "method": "GET",
+      "path": "/universe/system_kills",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_public_activity_intelligence",
+        "get_server_activity"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetUniverseSystems",
+      "method": "GET",
+      "path": "/universe/systems",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_systems"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseSystemsSystemId",
+      "method": "GET",
+      "path": "/universe/systems/{system_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_systems_system_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseTypes",
+      "method": "GET",
+      "path": "/universe/types",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_universe_types"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetUniverseTypesTypeId",
+      "method": "GET",
+      "path": "/universe/types/{type_id}",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "check_requirements",
+        "get_market_price"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetWars",
+      "method": "GET",
+      "path": "/wars",
+      "tag": "Wars",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "get_public_activity_intelligence"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "GetWarsWarId",
+      "method": "GET",
+      "path": "/wars/{war_id}",
+      "tag": "Wars",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_wars_war_id"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "GetWarsWarIdKillmails",
+      "method": "GET",
+      "path": "/wars/{war_id}/killmails",
+      "tag": "Wars",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.get_wars_war_id_killmails"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "PostCharactersAffiliation",
+      "method": "POST",
+      "path": "/characters/affiliation",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_characters_affiliation"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "PostCharactersCharacterIdAssetsLocations",
+      "method": "POST",
+      "path": "/characters/{character_id}/assets/locations",
+      "tag": "Assets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "list_owned_ships",
+        "search_assets"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "PostCharactersCharacterIdAssetsNames",
+      "method": "POST",
+      "path": "/characters/{character_id}/assets/names",
+      "tag": "Assets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "list_owned_ships",
+        "search_assets"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "PostCharactersCharacterIdContacts",
+      "method": "POST",
+      "path": "/characters/{character_id}/contacts",
+      "tag": "Contacts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_characters_character_id_contacts"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostCharactersCharacterIdCspa",
+      "method": "POST",
+      "path": "/characters/{character_id}/cspa",
+      "tag": "Character",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_characters_character_id_cspa"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "PostCharactersCharacterIdFittings",
+      "method": "POST",
+      "path": "/characters/{character_id}/fittings",
+      "tag": "Fittings",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_characters_character_id_fittings"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostCharactersCharacterIdMail",
+      "method": "POST",
+      "path": "/characters/{character_id}/mail",
+      "tag": "Mail",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_characters_character_id_mail"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostCharactersCharacterIdMailLabels",
+      "method": "POST",
+      "path": "/characters/{character_id}/mail/labels",
+      "tag": "Mail",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_characters_character_id_mail_labels"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostCorporationsCorporationIdAssetsLocations",
+      "method": "POST",
+      "path": "/corporations/{corporation_id}/assets/locations",
+      "tag": "Assets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_corporations_corporation_id_assets_locations"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "PostCorporationsCorporationIdAssetsNames",
+      "method": "POST",
+      "path": "/corporations/{corporation_id}/assets/names",
+      "tag": "Assets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_corporations_corporation_id_assets_names"
+      ],
+      "reason": "Available through the strict descriptor-driven execute_eve_read capability."
+    },
+    {
+      "operation_id": "PostFleetsFleetIdMembers",
+      "method": "POST",
+      "path": "/fleets/{fleet_id}/members",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_fleets_fleet_id_members"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostFleetsFleetIdWings",
+      "method": "POST",
+      "path": "/fleets/{fleet_id}/wings",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_fleets_fleet_id_wings"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostFleetsFleetIdWingsWingIdSquads",
+      "method": "POST",
+      "path": "/fleets/{fleet_id}/wings/{wing_id}/squads",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_fleets_fleet_id_wings_wing_id_squads"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostRoute",
+      "method": "POST",
+      "path": "/route/{origin_system_id}/{destination_system_id}",
+      "tag": "Routes",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "calculate_route"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "PostUiAutopilotWaypoint",
+      "method": "POST",
+      "path": "/ui/autopilot/waypoint",
+      "tag": "User Interface",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_ui_autopilot_waypoint"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostUiOpenwindowContract",
+      "method": "POST",
+      "path": "/ui/openwindow/contract",
+      "tag": "User Interface",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_ui_openwindow_contract"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostUiOpenwindowInformation",
+      "method": "POST",
+      "path": "/ui/openwindow/information",
+      "tag": "User Interface",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_ui_openwindow_information"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostUiOpenwindowMarketdetails",
+      "method": "POST",
+      "path": "/ui/openwindow/marketdetails",
+      "tag": "User Interface",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_ui_openwindow_marketdetails"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostUiOpenwindowNewmail",
+      "method": "POST",
+      "path": "/ui/openwindow/newmail",
+      "tag": "User Interface",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.post_ui_openwindow_newmail"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PostUniverseIds",
+      "method": "POST",
+      "path": "/universe/ids",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "search_eve_universe"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "PostUniverseNames",
+      "method": "POST",
+      "path": "/universe/names",
+      "tag": "Universe",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_semantic",
+      "capability_ids": [
+        "resolve_eve_entities"
+      ],
+      "reason": null
+    },
+    {
+      "operation_id": "PutCharactersCharacterIdCalendarEventId",
+      "method": "PUT",
+      "path": "/characters/{character_id}/calendar/{event_id}",
+      "tag": "Calendar",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.put_characters_character_id_calendar_event_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PutCharactersCharacterIdContacts",
+      "method": "PUT",
+      "path": "/characters/{character_id}/contacts",
+      "tag": "Contacts",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.put_characters_character_id_contacts"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PutCharactersCharacterIdMailMailId",
+      "method": "PUT",
+      "path": "/characters/{character_id}/mail/{mail_id}",
+      "tag": "Mail",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.put_characters_character_id_mail_mail_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PutFleetsFleetId",
+      "method": "PUT",
+      "path": "/fleets/{fleet_id}",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.put_fleets_fleet_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PutFleetsFleetIdMembersMemberId",
+      "method": "PUT",
+      "path": "/fleets/{fleet_id}/members/{member_id}",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.put_fleets_fleet_id_members_member_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PutFleetsFleetIdSquadsSquadId",
+      "method": "PUT",
+      "path": "/fleets/{fleet_id}/squads/{squad_id}",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.put_fleets_fleet_id_squads_squad_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    },
+    {
+      "operation_id": "PutFleetsFleetIdWingsWingId",
+      "method": "PUT",
+      "path": "/fleets/{fleet_id}/wings/{wing_id}",
+      "tag": "Fleets",
+      "compatibility_snapshot": "2026-08-18",
+      "disposition": "implemented_bounded_low_level",
+      "capability_ids": [
+        "esi.put_fleets_fleet_id_wings_wing_id"
+      ],
+      "reason": "Available through the guarded prepare, confirm, single-use execute, and audit action pipeline."
+    }
+  ]
+}

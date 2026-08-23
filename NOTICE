@@ -1,0 +1,45 @@
+EVE Copilot
+Copyright (c) 2026 quareth.
+Licensed under the MIT License. See LICENSE.
+
+This product uses third-party packages distributed under their respective
+licenses. Package license texts and notices are included with installed
+dependencies where required.
+
+Portions of the configuration parsing, SQLite initialization, log redaction,
+and EVE scope inventory were adapted from the EVE AI Agent project:
+
+MIT License
+
+Copyright (c) 2026 EVE AI Agent contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Exact provenance and material changes are recorded in docs/attribution.md.
+
+The fitting calculator includes a pinned WebAssembly build of
+EVEShipFit/dogma-engine, copyright EVEShipFit contributors, distributed under
+the MIT License. Its artifact provenance and license text are included in
+vendor/dogma-engine.
+
+© 2014 CCP hf. All rights reserved. "EVE", "EVE Online", "CCP", and all
+related logos and images are trademarks or registered trademarks of CCP hf.
+
+EVE Copilot is an independent third-party project and is not affiliated with
+or endorsed by CCP hf.

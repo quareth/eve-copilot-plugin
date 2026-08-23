@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/EVEShipFit/dogma-engine",
+  "commit": "e8e536be341959a8abdc6f02600fe449bc6f4764",
+  "source_archive_sha256": "adb1630acf2cef1f1a01a898fb886f424cbb836bed6044d7f123e81643350e1d",
+  "cargo_lock_sha256": "5b0bb772e60ee9635c726767caede617a600ea25ef2ce81c3193218428f7bc7e",
+  "rustc": "1.98.0 (88d9e12ae 2026-08-18)",
+  "wasm_pack": "0.15.0",
+  "wasm_bindgen": "0.2.127",
+  "build_target": "web",
+  "build_features": ["wasm"],
+  "default_features": false,
+  "javascript_sha256": "271eccacd1e6df09601b708dfd0af81e1e669209652e93fd1fe5844fcc4373ce",
+  "wasm_sha256": "8ab0ed0365e0a8b6cc097f46d6bf552786720100630b83de1b176263980865cf",
+  "license": "MIT"
+}

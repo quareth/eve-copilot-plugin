@@ -1,0 +1,55 @@
+{
+  "name": "eve-copilot",
+  "version": "0.1.4",
+  "description": "A local, character-aware AI copilot for EVE Online\u2014from first setup to live operations.",
+  "author": {
+    "name": "quareth",
+    "url": "https://github.com/quareth"
+  },
+  "homepage": "https://github.com/quareth/eve-copilot-plugin",
+  "repository": "https://github.com/quareth/eve-copilot-plugin",
+  "license": "MIT",
+  "keywords": [
+    "eve-online",
+    "ai-copilot",
+    "character-aware",
+    "faction-persona",
+    "exploration",
+    "combat",
+    "mining",
+    "fitting",
+    "pvp",
+    "pve",
+    "route-planning",
+    "plugin",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "EVE Copilot",
+    "shortDescription": "Your character-aware AI copilot for EVE Online",
+    "longDescription": "An intelligent local companion for EVE Online that turns your authorized character data, current skills, ships, assets, and location into practical decisions. Plan exploration expeditions, combat objectives, fittings, and mining campaigns; then switch to focused live guidance when you are in space. The bundled MCP runtime provides trusted EVE data and deterministic fitting checks while keeping character access on your computer.",
+    "developerName": "quareth",
+    "category": "Games",
+    "capabilities": [
+      "Guided installation and EVE application setup",
+      "Guided complete removal of plugin and private local data",
+      "Selectable neutral or faction-aligned copilot persona",
+      "Private, character-aware recommendations",
+      "Exploration planning and live guidance",
+      "Combat ship selection and fitting validation",
+      "Solo and fleet mining operations",
+      "Trusted EVE data through an agent-managed local MCP runtime"
+    ],
+    "websiteURL": "https://github.com/quareth/eve-copilot-plugin",
+    "brandColor": "#B8954B",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Set up EVE Copilot on this computer.",
+      "What should I do next with my current character?",
+      "Choose and fit a ship for my objective."
+    ]
+  }
+}

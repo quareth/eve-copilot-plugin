@@ -1,0 +1,5 @@
+interface:
+  display_name: "EVE Copilot Persona"
+  short_description: "Choose the voice of your EVE AI copilot"
+  brand_color: "#B8954B"
+  default_prompt: "Use $eve-persona to show or change my EVE Copilot faction persona."
