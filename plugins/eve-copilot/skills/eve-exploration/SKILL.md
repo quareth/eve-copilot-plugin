@@ -44,6 +44,24 @@ observations, or an unrecorded wormhole connection. In Preparation, combine
 these into one short question when possible. In Active Exploration, ask at
 most one immediate observation question.
 
+## Use remembered exploration context carefully
+
+For non-urgent follow-ups or recurring expeditions, search the private EVE guide
+before asking the pilot to repeat preferences, avoidance systems, prior routes,
+fits, plans, or lessons. Read relevant pages in full. Memory is advisory:
+compare `updated_at`, `freshness.observed_at`, and provenance times with the
+current date and time, judge age according to the volatility of the claim, and
+validate current location, ship, fit, skills, routes, activity, site rules, and
+mechanics with current sources. Continue from an older page only for durable
+personal context that has not been contradicted.
+
+After a useful reusable conclusion, search for its canonical page and revise or
+create it on a best-effort basis. Preserve durable preferences, expedition
+policies, reusable plans, and lessons; store volatile state only as a dated
+snapshot. Do not store raw conversations, raw API responses, secrets, or
+trivial exchanges. Under immediate danger, give the safe action first and
+defer guide work until the pilot is safe.
+
 ## Validate every proposed fitting
 
 Whenever this skill creates, recommends, compares, or materially changes an

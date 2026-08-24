@@ -52,6 +52,7 @@ describe.each([
         'error',
       ],
       cwd: process.cwd(),
+      env: { EVE_COPILOT_PERSONA: 'none' },
       stderr: 'pipe',
     });
     const stderr: string[] = [];

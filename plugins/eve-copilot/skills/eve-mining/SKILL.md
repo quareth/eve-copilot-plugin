@@ -45,6 +45,24 @@ material destination, unrecorded support, Local, D-scan, site depletion, or
 wormhole condition. Group preparation questions. During a live operation, ask
 at most one immediate observation after any urgent action.
 
+## Use remembered mining context carefully
+
+For non-urgent follow-ups or recurring operations, search the private EVE guide
+before asking the pilot to repeat preferences, residue policy, material
+destinations, prior fits, logistics plans, or lessons. Read relevant pages in
+full. Memory is advisory: compare `updated_at`, `freshness.observed_at`, and
+provenance times with the current date and time, judge age according to the
+volatility of the claim, and validate current skills, assets, fits, prices,
+routes, resource rules, and mechanics with current sources. Continue from an
+older page only for durable personal context that has not been contradicted.
+
+After a useful reusable conclusion, search for its canonical page and revise or
+create it on a best-effort basis. Preserve durable preferences, operation
+policies, reusable plans, and lessons; store volatile state only as a dated
+snapshot. Do not store raw conversations, raw API responses, secrets, or
+trivial exchanges. Under immediate danger, give the escape or hold action first
+and defer guide work until the pilot is safe.
+
 ## Normalize the mining objective
 
 Construct a compact context from the available evidence:

@@ -13,6 +13,7 @@ plugins/eve-copilot                 shared installable EVE Copilot plugin
         |-- .claude-plugin          Claude Code manifest
         |-- .mcp.json               Codex MCP configuration
         |-- .claude-mcp.json        Claude Code MCP configuration
+        |-- skills/eve-copilot      topic-gated identity and EVE routing
         |-- skills/eve-setup        installation and CCP application guidance
         |-- skills/eve-uninstall    ordered plugin and private-data removal
         |-- skills/eve-persona      shared faction voice selection and rules
@@ -76,13 +77,23 @@ local authoring and plugin distribution cannot silently diverge.
 
 ## Shared faction persona
 
-`eve-persona` is the global profile layer inside EVE Copilot. It supports
-`none`, `amarr`, `caldari`, `gallente`, and `minmatar`; `none` is the default.
+`eve-copilot` is the topic-gated gateway for in-game EVE Online requests. Its
+description covers gameplay, lore, pilot advice, and specialized workflows,
+while explicitly excluding plugin setup, configuration, diagnostics, persona
+management, development, testing, documentation, repository work, and unrelated
+topics. When selected, it reads the runtime profile, establishes the in-universe
+copilot identity for that gameplay task, and routes specialized work to the
+appropriate domain skill. Software-management skills retain the host's neutral
+voice.
+
+`eve-persona` owns the persisted profile and its configuration workflow. It
+supports `none`, `amarr`, `caldari`, `gallente`, and `minmatar`; `none` is the
+default.
 The selection is stored as `persona_faction` in per-user runtime configuration
 and exposed to every EVE workflow by the read-only
-`get_eve_copilot_profile` tool. Every canonical skill and native agent wrapper
-loads that profile before non-urgent advisory work. Live agents still put the
-immediate action before any flavor.
+`get_eve_copilot_profile` tool. The gateway, specialized gameplay skills, and
+native agent wrappers load that profile before non-urgent advisory work. Live
+agents still put the immediate action before any flavor.
 
 The persona changes wording and identity only. Facts, calculations, fitting
 validation, evidence standards, risk, safety boundaries, and ship or module
@@ -97,9 +108,10 @@ eve-copilot-mcp setup --persona <none|amarr|caldari|gallente|minmatar>
 ```
 
 The MCP runtime loads configuration at startup, so the host must be restarted
-or a new task opened after a change. This is deliberately scoped to EVE
-Copilot rather than writing a global `~/.codex/AGENTS.md`, which would also
-change unrelated Codex work.
+or a new task opened after a change. Topic-gated skill activation keeps the
+identity scoped to in-game EVE assistance without writing a global
+`~/.codex/AGENTS.md`, which would also change software work and unrelated Codex
+tasks.
 
 ## EVE exploration
 

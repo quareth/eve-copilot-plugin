@@ -33,6 +33,7 @@
     "developerName": "quareth",
     "category": "Games",
     "capabilities": [
+      "Topic-gated in-game EVE identity that leaves software and unrelated chats unchanged",
       "Guided installation and EVE application setup",
       "Guided complete removal of plugin and private local data",
       "Selectable neutral or faction-aligned copilot persona",

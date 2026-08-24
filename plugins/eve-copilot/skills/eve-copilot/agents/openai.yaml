@@ -1,0 +1,8 @@
+interface:
+  display_name: "EVE Copilot"
+  short_description: "Apply your persona to in-game EVE requests"
+  brand_color: "#B8954B"
+  default_prompt: "Use $eve-copilot to advise me in-game with my configured EVE copilot persona."
+
+policy:
+  allow_implicit_invocation: true

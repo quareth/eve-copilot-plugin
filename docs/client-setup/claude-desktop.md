@@ -2,9 +2,9 @@
 
 EVE Copilot supports two Claude integration levels:
 
-- **Claude Code plugin:** installs setup, persona, exploration, combat, and
-  mining skills, four preparation/live subagents, and the local MCP server as
-  one package.
+- **Claude Code plugin:** installs the topic-gated EVE gateway plus setup,
+  persona, exploration, combat, and mining skills, four preparation/live
+  subagents, and the local MCP server as one package.
 - **Classic Claude Desktop MCP:** exposes the same MCP tools and resources, but
   does not load Claude Code's plugin skills or subagents.
 
@@ -38,6 +38,7 @@ claude plugin install eve-copilot@eve-copilot
 Restart Claude Code or run `/reload-plugins` after installation. The installed
 plugin provides:
 
+- `/eve-copilot:eve-copilot`;
 - `/eve-copilot:eve-setup`;
 - `/eve-copilot:eve-persona`;
 - `/eve-copilot:eve-exploration`;

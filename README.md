@@ -33,6 +33,7 @@ jobs.
 
 | Skill or copilot | What it does |
 |---|---|
+| **EVE Copilot gateway** | Applies the selected in-universe persona to gameplay, lore, and pilot-advisory requests while leaving plugin management, development, and unrelated ChatGPT topics neutral. |
 | **Exploration preparation** | Plans a data or relic expedition around your character, current location, ship, fit, route, risk, and extraction plan. |
 | **Active exploration** | Gives short next-step guidance while you scan, travel, enter sites, watch for danger, retreat, and bring the loot home. |
 | **Combat** | Chooses or reviews PvE and PvP ships using your skills, owned ships, saved fits, budget, environment, and combat goal. |
@@ -62,6 +63,9 @@ EVE Copilot combines a few useful ideas in one plugin:
 
 - **MCP tools** connect the AI to EVE's APIs and a local copy of EVE's static
   data.
+- **Topic-gated identity** applies the configured copilot persona to in-game
+  EVE requests while leaving plugin management, repository work, and unrelated
+  ChatGPT conversations unchanged.
 - **Character context** lets it reason about your location, ship, fitting,
   skills, assets, wallet, and other authorized information.
 - **Dedicated skills** cover exploration, combat, and mining, with separate

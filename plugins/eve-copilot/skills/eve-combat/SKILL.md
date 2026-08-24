@@ -41,6 +41,23 @@ During preparation, combine them into one compact question when possible. In a
 live situation, ask at most one immediate observation after giving any urgent
 action.
 
+## Use remembered combat context carefully
+
+For non-urgent follow-ups or recurring objectives, search the private EVE guide
+before asking the pilot to repeat prior preferences, loss policy, doctrine
+decisions, fits, operating plans, or lessons. Read relevant pages in full.
+Memory is advisory: compare `updated_at`, `freshness.observed_at`, and provenance
+times with the current date and time, judge age according to the volatility of
+the claim, and validate current skills, assets, fits, prices, rules, mechanics,
+and threat context with current sources. Continue from an older page only for
+durable personal context that has not been contradicted.
+
+After a useful reusable conclusion, search for its canonical page and revise or
+create it on a best-effort basis. Preserve durable choices, personalized fit
+rationale, reusable engagement plans, and lessons; store volatile state only as
+a dated snapshot. Do not store raw conversations, raw API responses, secrets,
+or trivial exchanges. In immediate danger, act first and defer guide work.
+
 ## Normalize the objective
 
 Construct a compact combat-context record from known facts:

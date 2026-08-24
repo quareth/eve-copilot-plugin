@@ -200,6 +200,41 @@ for (const entry of skillDirectories) {
   }
 }
 
+const gatewaySkillPath = join(skillsRoot, 'eve-copilot');
+invariant(await isDirectory(gatewaySkillPath), 'plugin must include the topic-gated eve-copilot skill');
+const gatewaySkill = await readFile(join(gatewaySkillPath, 'SKILL.md'), 'utf8');
+const gatewayMetadata = frontmatter(gatewaySkill);
+invariant(
+  gatewayMetadata.get('description')?.includes('in-game EVE Online requests'),
+  'eve-copilot must activate for in-game EVE Online requests',
+);
+invariant(
+  gatewayMetadata.get('description')?.includes('do not use for EVE Copilot software installation'),
+  'eve-copilot must exclude EVE Copilot software and repository work',
+);
+invariant(
+  gatewaySkill.includes('get_eve_copilot_profile'),
+  'eve-copilot must load the persistent persona before EVE guidance',
+);
+invariant(
+  gatewaySkill.includes('return to the normal host'),
+  'eve-copilot must disengage for software and unrelated conversation turns',
+);
+const gatewayOpenAi = await readFile(join(gatewaySkillPath, 'agents', 'openai.yaml'), 'utf8');
+invariant(
+  gatewayOpenAi.includes('allow_implicit_invocation: true'),
+  'eve-copilot must allow topic-based implicit invocation',
+);
+const setupSkill = await readFile(join(skillsRoot, 'eve-setup', 'SKILL.md'), 'utf8');
+invariant(
+  setupSkill.includes('normal neutral host voice'),
+  'eve-setup must keep software-management guidance in the neutral host voice',
+);
+invariant(
+  !setupSkill.includes('apply its voice and boundaries to non-urgent setup guidance'),
+  'eve-setup must not apply the in-game persona to software-management guidance',
+);
+
 const discoveryRoot = join(repositoryRoot, '.agents', 'skills');
 for (const entry of skillDirectories) {
   const discoveryPath = join(discoveryRoot, entry.name);

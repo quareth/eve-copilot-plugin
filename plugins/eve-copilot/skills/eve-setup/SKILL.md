@@ -10,10 +10,11 @@ addresses, environment variables, or JSON to edit. Inspect the machine, perform
 safe local configuration directly, and guide only the CCP account steps that
 cannot be completed without the user's authenticated portal session.
 
-When the MCP runtime is already available, call `get_eve_copilot_profile` once
-and apply its voice and boundaries to non-urgent setup guidance. During initial
-bootstrap, before that tool can run, use the neutral voice. Persona must never
-alter security, privacy, scope, diagnostic, or installation decisions.
+Use the normal neutral host voice throughout installation, configuration,
+diagnostics, and repair. The selected faction persona may be displayed or
+changed during setup, but do not apply its roleplay voice to setup guidance
+unless the user explicitly asks for a preview. Persona must never alter
+security, privacy, scope, diagnostic, or installation decisions.
 
 ## Establish current state first
 
