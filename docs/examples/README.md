@@ -1,5 +1,12 @@
 # EVE Copilot examples
 
+[![Main README](https://img.shields.io/badge/project-main_README-374151?style=flat-square)](../../README.md)
+[![Exploration](https://img.shields.io/badge/example-exploration-7c3aed?style=flat-square)](#exploration-expedition)
+[![Voice chat](https://img.shields.io/badge/example-voice_chat-10a37f?style=flat-square)](#voice-chat-while-playing)
+[![Fitting](https://img.shields.io/badge/example-fitting-2563eb?style=flat-square)](#current-ship-and-fitting)
+[![Market and routes](https://img.shields.io/badge/example-market_%26_routes-d97757?style=flat-square)](#market-and-route-planning)
+[![Mining](https://img.shields.io/badge/example-mining-c69214?style=flat-square)](#mining-preparation)
+
 These are direct screenshots from actual EVE Copilot sessions rather than
 rewritten mockups. Market prices, traffic, routes, character state, and other
 live information are snapshots from the time of each conversation.
@@ -21,6 +28,14 @@ Voice chat lets the conversation continue without repeatedly leaving EVE or
 typing out the current situation. The first screenshot shows the transcript of
 a spoken mining conversation. The second shows ChatGPT voice chat kept open
 over the game.
+
+> **ChatGPT Voice limitation:** In this project's experience, ChatGPT's native
+> Voice conversation is more lightweight than written chat. It works well for
+> quick questions and immediate guidance, but long planning, detailed
+> comparisons, and multi-step tool work may be shorter or less thorough. For
+> those tasks, switch to written chat or ask Voice to start a separate task.
+> This is a limitation of the ChatGPT voice experience rather than EVE Copilot.
+> See the official [ChatGPT Voice documentation](https://learn.chatgpt.com/docs/features/voice).
 
 ![A voice conversation comparing mining ships, correcting a crystal recommendation, and checking the character's skills](./assets/Eve-Mcp9.png)
 
@@ -58,4 +73,4 @@ possibilities, owned ships, fitting, skills, and travel risk.
 
 ![Planning a Kernite trip using the character's current location, Retriever fitting, and available alternatives](./assets/Eve-Mcp7.png)
 
-[Back to the main README](../../README.md)
+[![Back to the main README](https://img.shields.io/badge/project-back_to_README-374151?style=flat-square)](../../README.md)

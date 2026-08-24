@@ -1,5 +1,11 @@
 # EVE Copilot
 
+[![Examples](https://img.shields.io/badge/examples-real_sessions-7c3aed?style=flat-square)](./docs/examples/README.md)
+[![ChatGPT/Codex setup](https://img.shields.io/badge/setup-ChatGPT_%26_Codex-10a37f?style=flat-square)](./docs/client-setup/chatgpt-codex.md)
+[![Claude setup](https://img.shields.io/badge/setup-Claude-d97757?style=flat-square)](./docs/client-setup/claude-desktop.md)
+[![Documentation](https://img.shields.io/badge/docs-project_guide-2563eb?style=flat-square)](./docs/plugin-system.md)
+[![MIT License](https://img.shields.io/badge/license-MIT-f5c518?style=flat-square)](./LICENSE)
+
 EVE Online is enormous, complicated, and not especially kind to new players.
 There is always another mechanic, fitting rule, dangerous site, skill dependency,
 or expensive mistake waiting to be discovered.
@@ -68,9 +74,9 @@ pilot is in space, and compares where to sell the loot afterward.
   width="100%">
 
 Market prices, activity, routes, and character state shown here are snapshots
-from that session and will change. See the
-[examples gallery](./docs/examples/README.md) for fitting, route, market,
-mining, and voice-chat screenshots.
+from that session and will change.
+
+[![Browse all examples](https://img.shields.io/badge/examples-browse_the_gallery-7c3aed?style=flat-square)](./docs/examples/README.md)
 
 ## What makes it different from a normal AI chat
 
