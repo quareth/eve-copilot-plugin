@@ -183,6 +183,18 @@ The setup guide checks the required software, installs the local runtime and EVE
 static data, and walks you through character connection if you want it. You do
 not need to clone or build the repository manually.
 
+### Before you continue
+
+> [!IMPORTANT]
+> After the plugin is added, Codex can handle the remaining setup and
+> installation. This means it may run commands, install missing prerequisites
+> such as Git or Node.js/npm, download packages, and build native dependencies.
+> Depending on the operating system, supporting tools such as Python may also
+> be required. Only use the guided setup if you are comfortable allowing an AI
+> assistant to operate your computer and install software on it. EVE Copilot's
+> setup asks for permission before installing missing prerequisites or building
+> the local runtime.
+
 Connecting a character requires an application in the official EVE Developers
 Portal. The setup guide explains the fields and permissions. EVE Copilot uses
 PKCE, so it needs the public Client ID but not a client secret. Your EVE password,
