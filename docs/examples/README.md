@@ -11,7 +11,9 @@ a low-sec route and extraction plan; answers a site-entry question during the
 expedition; and compares the recovered loot's immediate-sale value in Mamet and
 Amarr.
 
-![A complete exploration session, from expedition preparation to selling the loot](./assets/example.gif)
+<img src="./assets/example.gif"
+  alt="A complete exploration session, from expedition preparation to selling the loot"
+  width="100%">
 
 ## Voice chat while playing
 
