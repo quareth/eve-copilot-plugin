@@ -7,9 +7,11 @@
 [![Market and routes](https://img.shields.io/badge/example-market_%26_routes-d97757?style=flat-square)](#market-and-route-planning)
 [![Mining](https://img.shields.io/badge/example-mining-c69214?style=flat-square)](#mining-preparation)
 
-These are direct screenshots from actual EVE Copilot sessions rather than
-rewritten mockups. Market prices, traffic, routes, character state, and other
-live information are snapshots from the time of each conversation.
+These examples come from actual EVE Copilot sessions rather than invented
+mockups. The exploration animation is rendered from its real transcript; the
+remaining images are direct screenshots. Market prices, traffic, routes,
+character state, and other live information are snapshots from the time of
+each conversation.
 
 ## Exploration expedition
 
@@ -20,7 +22,9 @@ Amarr.
 
 <img src="./assets/example.gif"
   alt="A complete exploration session, from expedition preparation to selling the loot"
-  width="100%">
+  width="800">
+
+[![Read the transcript](https://img.shields.io/badge/example-read_the_transcript-7c3aed?style=flat-square)](./exploration-expedition.md)
 
 ## Voice chat while playing
 

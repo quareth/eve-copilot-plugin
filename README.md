@@ -65,13 +65,13 @@ Some example questions:
 
 ## Example usage
 
-This is a direct transcript from a real exploration session. EVE Copilot checks
-the character and ship, prepares the expedition, helps with a site while the
-pilot is in space, and compares where to sell the loot afterward.
+This animated example uses a real exploration-session transcript. EVE Copilot
+checks the character and ship, prepares the expedition, helps with a site while
+the pilot is in space, and compares where to sell the loot afterward.
 
 <img src="./docs/examples/assets/example.gif"
   alt="A real EVE Copilot exploration session, from preparation to selling the loot"
-  width="100%">
+  width="800">
 
 Market prices, activity, routes, and character state shown here are snapshots
 from that session and will change.
