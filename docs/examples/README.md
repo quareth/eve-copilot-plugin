@@ -8,7 +8,7 @@
 [![Mining](https://img.shields.io/badge/example-mining-c69214?style=flat-square)](#mining-preparation)
 
 These examples come from actual EVE Copilot sessions rather than invented
-mockups. The exploration animation is rendered from its real transcript; the
+mockups. The exploration example is a lightly formatted real transcript; the
 remaining images are direct screenshots. Market prices, traffic, routes,
 character state, and other live information are snapshots from the time of
 each conversation.
@@ -19,10 +19,6 @@ The copilot checks the character's location, ship, fitting, and skills; prepares
 a low-sec route and extraction plan; answers a site-entry question during the
 expedition; and compares the recovered loot's immediate-sale value in Mamet and
 Amarr.
-
-<img src="./assets/example.gif"
-  alt="A complete exploration session, from expedition preparation to selling the loot"
-  width="800">
 
 [![Read the transcript](https://img.shields.io/badge/example-read_the_transcript-7c3aed?style=flat-square)](./exploration-expedition.md)
 

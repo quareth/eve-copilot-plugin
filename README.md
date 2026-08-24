@@ -65,13 +65,11 @@ Some example questions:
 
 ## Example usage
 
-This animated example uses a real exploration-session transcript. EVE Copilot
-checks the character and ship, prepares the expedition, helps with a site while
-the pilot is in space, and compares where to sell the loot afterward.
+One real exploration session follows the whole trip: EVE Copilot checks the
+character and ship, prepares the expedition, helps with a site while the pilot
+is in space, and compares where to sell the loot afterward.
 
-<img src="./docs/examples/assets/example.gif"
-  alt="A real EVE Copilot exploration session, from preparation to selling the loot"
-  width="800">
+[![Read the exploration transcript](https://img.shields.io/badge/example-read_the_exploration_transcript-7c3aed?style=flat-square)](./docs/examples/exploration-expedition.md)
 
 Market prices, activity, routes, and character state shown here are snapshots
 from that session and will change.
