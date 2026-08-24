@@ -145,7 +145,32 @@ not be treated as a live order book or an instant danger warning.
 You need ChatGPT/Codex, Git, Node.js `>=24 <27`, npm, and access to this public
 repository.
 
-Register the repository as a Codex marketplace and install the plugin:
+### Install from the desktop app
+
+1. Open **Plugins** from the left sidebar.
+
+   <img src="./docs/client-setup/assets/install-open-plugins.png"
+     alt="Plugins highlighted in the ChatGPT Codex sidebar"
+     width="800">
+
+2. Select **Add** in the upper-right corner, then choose
+   **Add plugin marketplace**.
+
+   <img src="./docs/client-setup/assets/install-add-marketplace.png"
+     alt="Add highlighted in the upper-right corner of the Plugins page"
+     width="800">
+
+3. Enter these marketplace settings:
+
+   - **Source:** `https://github.com/quareth/eve-copilot-plugin`
+   - **Git ref:** `main`
+   - **Sparse paths:** leave empty
+
+4. Select **Add marketplace**, find **EVE Copilot**, and install it.
+
+### Command-line alternative
+
+You can register the same marketplace and install the plugin from a terminal:
 
 ```sh
 codex plugin marketplace add quareth/eve-copilot-plugin --ref main
