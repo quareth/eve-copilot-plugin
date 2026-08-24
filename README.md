@@ -57,6 +57,19 @@ Some example questions:
 - “Where did I leave my Astero?”
 - “Keep guiding me while I run this site.”
 
+## Example usage
+
+This is a direct transcript from a real exploration session. EVE Copilot checks
+the character and ship, prepares the expedition, helps with a site while the
+pilot is in space, and compares where to sell the loot afterward.
+
+![A real EVE Copilot exploration session, from preparation to selling the loot](./docs/examples/assets/example.gif)
+
+Market prices, activity, routes, and character state shown here are snapshots
+from that session and will change. See the
+[examples gallery](./docs/examples/README.md) for fitting, route, market,
+mining, and voice-chat screenshots.
+
 ## What makes it different from a normal AI chat
 
 EVE Copilot combines a few useful ideas in one plugin:
