@@ -134,11 +134,13 @@ describe('FileSdeRepository requirement closure', () => {
 
   it('rejects a path deeper than the corruption limit', async () => {
     const { repository } = await requirementRepository((database) => {
-      insertType(database, 100, 'Target', 10);
-      for (let index = 0; index < 65; index += 1) {
-        insertType(database, 1_000 + index, `Skill ${String(index)}`, 20);
-        insertEdge(database, index === 0 ? 100 : 999 + index, 1, 1_000 + index, 1);
-      }
+      database.transaction(() => {
+        insertType(database, 100, 'Target', 10);
+        for (let index = 0; index < 65; index += 1) {
+          insertType(database, 1_000 + index, `Skill ${String(index)}`, 20);
+          insertEdge(database, index === 0 ? 100 : 999 + index, 1, 1_000 + index, 1);
+        }
+      })();
     });
     await expect(repository.resolveTypeRequirementClosure(100)).rejects.toMatchObject({ code: 'RESULT_LIMIT_EXCEEDED' });
   });
