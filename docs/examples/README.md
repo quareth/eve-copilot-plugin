@@ -33,17 +33,9 @@ typing out the current situation. The first screenshot shows the transcript of
 a spoken mining conversation. The second shows ChatGPT voice chat kept open
 over the game.
 
-> **Observed ChatGPT Voice limitation:** In this project's experience, ChatGPT's native
-> Voice conversation is more lightweight than written chat. It works well for
-> quick questions and immediate guidance, but long planning, detailed
-> comparisons, and multi-step tool work may be shorter or less thorough. For
-> those tasks, switch to written chat or ask Voice to start a separate task.
-> This is an observation from using the project, not a claim documented by
-> OpenAI, and it concerns the ChatGPT voice experience rather than EVE Copilot.
-
-ChatGPT Voice can start a separate task for longer work; that supported workflow
-is described in the official
-[ChatGPT Voice documentation](https://learn.chatgpt.com/docs/features/voice).
+For some reason, Voice does not always reach the same depth or quality as
+written chat, but it is great for faster answers while you are actively
+playing.
 
 ![A voice conversation comparing mining ships, correcting a crystal recommendation, and checking the character's skills](./assets/Eve-Mcp9.png)
 
