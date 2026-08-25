@@ -55,7 +55,7 @@ describe('runSetupCommand', () => {
 
     expect(output.state).toBe('character_ready');
     expect(JSON.parse(readFileSync(output.config_file, 'utf8'))).toEqual({
-      esi_user_agent: 'EVE-Copilot/0.1.5 (+https://github.com/quareth/eve-copilot-plugin)',
+      esi_user_agent: 'EVE-Copilot/0.1.8 (+https://github.com/quareth/eve-copilot-plugin)',
       eve_client_id: 'public-client-id',
       persona_faction: 'amarr',
     });

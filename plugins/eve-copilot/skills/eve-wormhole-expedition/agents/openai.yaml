@@ -1,0 +1,8 @@
+interface:
+  display_name: "EVE Wormhole Expedition"
+  short_description: "Record wormhole chains and route home"
+  brand_color: "#7257C5"
+  default_prompt: "Use $eve-wormhole-expedition to start a temporary wormhole expedition from my current location."
+
+policy:
+  allow_implicit_invocation: true

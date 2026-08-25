@@ -2,8 +2,9 @@
 
 EVE Copilot is installed as a local ChatGPT/Codex plugin. The plugin includes
 a topic-gated EVE gateway, guided setup, a shared optional faction persona,
-exploration, combat, and mining skills, plus a launcher for the agent-managed
-local MCP capability server used for EVE data and deterministic checks.
+exploration, wormhole-expedition, combat, mining, and hauling skills, plus a
+launcher for the agent-managed local MCP capability server used for EVE data
+and deterministic checks.
 
 ## Install the complete plugin from GitHub
 
@@ -58,8 +59,8 @@ calculations, risk, or recommendations.
 
 The `eve-copilot` gateway is considered for in-game EVE Online requests,
 including gameplay and lore questions that do not belong to combat,
-exploration, or mining. It loads the selected persona before answering and
-keeps that identity confined to gameplay and pilot advice. Plugin setup,
+exploration, mining, or hauling. It loads the selected persona before answering
+and keeps that identity confined to gameplay and pilot advice. Plugin setup,
 configuration, diagnostics, persona management, development, documentation,
 repository work, and unrelated ChatGPT requests retain the normal host voice.
 

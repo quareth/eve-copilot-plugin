@@ -1,6 +1,6 @@
 {
   "name": "eve-copilot",
-  "version": "0.1.5",
+  "version": "0.1.8",
   "description": "A local, character-aware AI copilot for EVE Online\u2014from first setup to live operations.",
   "author": {
     "name": "quareth",
@@ -17,6 +17,7 @@
     "exploration",
     "combat",
     "mining",
+    "hauling",
     "fitting",
     "pvp",
     "pve",
@@ -29,7 +30,7 @@
   "interface": {
     "displayName": "EVE Copilot",
     "shortDescription": "Your character-aware AI copilot for EVE Online",
-    "longDescription": "An intelligent local companion for EVE Online that turns your authorized character data, current skills, ships, assets, and location into practical decisions. Plan exploration expeditions, combat objectives, fittings, and mining campaigns; then switch to focused live guidance when you are in space. The bundled MCP runtime provides trusted EVE data and deterministic fitting checks while keeping character access on your computer.",
+    "longDescription": "An intelligent local companion for EVE Online that turns your authorized character data, current skills, ships, assets, and location into practical decisions. Plan exploration expeditions, combat objectives, fittings, mining campaigns, and personal cargo moves; then switch to focused live guidance when you are in space. The bundled MCP runtime provides trusted EVE data and deterministic fitting checks while keeping character access on your computer.",
     "developerName": "quareth",
     "category": "Games",
     "capabilities": [
@@ -39,8 +40,10 @@
       "Selectable neutral or faction-aligned copilot persona",
       "Private, character-aware recommendations",
       "Exploration planning and live guidance",
+      "Temporary wormhole-chain recording and route-home guidance",
       "Combat ship selection and fitting validation",
       "Solo and fleet mining operations",
+      "Simple personal hauling plans and live travel guidance",
       "Trusted EVE data through an agent-managed local MCP runtime"
     ],
     "websiteURL": "https://github.com/quareth/eve-copilot-plugin",
@@ -50,7 +53,8 @@
     "defaultPrompt": [
       "Set up EVE Copilot on this computer.",
       "What should I do next with my current character?",
-      "Choose and fit a ship for my objective."
+      "Choose and fit a ship for my objective.",
+      "Plan a simple cargo move with a ship I can fly."
     ]
   }
 }
