@@ -265,6 +265,14 @@ const requiredAgentProfiles = new Map([
     'eve_active_mining.toml',
     { skill: '$eve-mining', reasoning: 'model_reasoning_effort = "low"' },
   ],
+  [
+    'eve_hauling_preparation.toml',
+    { skill: '$eve-hauling', reasoning: 'model_reasoning_effort = "medium"' },
+  ],
+  [
+    'eve_active_hauling.toml',
+    { skill: '$eve-hauling', reasoning: 'model_reasoning_effort = "low"' },
+  ],
 ]);
 
 const requiredClaudeAgentProfiles = new Map([
@@ -283,6 +291,14 @@ const requiredClaudeAgentProfiles = new Map([
   [
     'eve-mining-preparation.md',
     { name: 'eve-mining-preparation', skill: 'eve-mining', effort: 'medium' },
+  ],
+  [
+    'eve-hauling-preparation.md',
+    { name: 'eve-hauling-preparation', skill: 'eve-hauling', effort: 'medium' },
+  ],
+  [
+    'eve-active-hauling.md',
+    { name: 'eve-active-hauling', skill: 'eve-hauling', effort: 'low' },
   ],
 ]);
 

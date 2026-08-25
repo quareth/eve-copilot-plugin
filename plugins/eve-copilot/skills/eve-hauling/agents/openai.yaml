@@ -1,0 +1,8 @@
+interface:
+  display_name: "EVE Hauling"
+  short_description: "Plan simple, safer personal cargo moves"
+  brand_color: "#D08A3E"
+  default_prompt: "Use $eve-hauling to plan a simple cargo move with ships my selected character can fly."
+
+policy:
+  allow_implicit_invocation: true

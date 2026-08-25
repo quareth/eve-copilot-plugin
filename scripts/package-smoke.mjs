@@ -159,7 +159,7 @@ try {
   const version = execFileSync(process.execPath, [executable, 'version'], {
     encoding: 'utf8',
   }).trim();
-  if (version !== 'EVE Copilot MCP 0.1.5') {
+  if (version !== 'EVE Copilot MCP 0.1.8') {
     throw new Error(`Unexpected installed version output: ${version}`);
   }
   const pluginLauncher = join(
@@ -189,7 +189,7 @@ try {
       EVE_COPILOT_DATA_DIR: join(fixtureRoot, 'installer-status-data'),
     },
   }));
-  if (installerStatus.expected_version !== '0.1.5'
+  if (installerStatus.expected_version !== '0.1.8'
     || installerStatus.runtime?.installed !== false
     || installerStatus.prerequisites?.node?.supported !== true
     || installerStatus.prerequisites?.npm?.available !== true

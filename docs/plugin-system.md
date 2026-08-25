@@ -18,8 +18,10 @@ plugins/eve-copilot                 shared installable EVE Copilot plugin
         |-- skills/eve-uninstall    ordered plugin and private-data removal
         |-- skills/eve-persona      shared faction voice selection and rules
         |-- skills/eve-exploration  exploration workflow and knowledge
+        |-- skills/eve-wormhole-expedition  temporary guide-backed wormhole graph
         |-- skills/eve-combat       combat ship, fit, and operating guidance
         |-- skills/eve-mining       mining campaign, fit, and live guidance
+        |-- skills/eve-hauling      compact personal cargo movement guidance
         |-- agents                  Claude Code preparation/live agents
         |
 .codex/agents                       Codex-only spawned agent profiles
@@ -132,6 +134,18 @@ profiles use the configured GPT-5.6 Sol reasoning level. Claude profiles inherit
 the user's selected Claude model and map preparation to medium effort and live
 guidance to low effort.
 
+## EVE wormhole expeditions
+
+`eve-wormhole-expedition` records an explicitly reported temporary wormhole
+chain in the existing character-scoped EVE Guide. It grounds start and arrival
+systems with `get_current_location`, lets the model dynamically manage the
+guide page and graph representation, and stores both the departure signature
+and destination-side return bookmark for each completed jump. Route-home
+requests traverse those labeled observations back to the starting system.
+
+This skill is orchestration only. It adds no mapper provider, fixed guide page
+identity, database schema, MCP tool, polling process, or native agent profile.
+
 ## EVE mining
 
 `eve-mining` plans and supports complete mining operations across ore,
@@ -155,6 +169,28 @@ and capacitor states are requested only when the fit and operating plan make
 them relevant. Unsupported yield, cycle, residue, range, hold, compression,
 tank, agility, burst, and live-state claims remain explicitly sourced,
 estimated, or marked for in-game verification.
+
+## EVE hauling
+
+`eve-hauling` plans compact personal cargo moves, asset relocation, solo
+mining or PI deliveries, and specific courier contracts. It starts from the
+selected character's current location, skills, owned ships, relevant assets,
+origin, destination, and cargo rather than producing a generic hauling guide.
+
+The provider-native agents use the same preparation/live split without turning
+routine hauling into a large optimization task:
+
+- `eve_hauling_preparation`: medium-reasoning ship, fit, trip, route, and
+  delivery planning before undocking;
+- `eve_active_hauling`: low-effort, action-first hold, jump, dock, reroute,
+  turn-back, and delivery guidance while cargo is moving.
+
+The skill uses the shared fitting analyzer for fit legality and labels current
+unsupported hauling metrics—including effective hold capacity, align, warp,
+tank, signature, warp strength, cloak travel, and jump performance—as sourced,
+estimated, pilot-reported, or requiring in-game verification. Advanced public
+contract discovery, capital logistics, cyno networks, and large multi-stop
+optimization remain conditional rather than part of ordinary personal moves.
 
 ## Local development and installation
 

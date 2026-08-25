@@ -20,9 +20,9 @@ and budget also gets old quickly.
 This started as a hobby project to solve my own problem as a new player. I built
 EVE Copilot as a character-aware EVE companion for ChatGPT and Codex. It
 connects the conversation to your EVE character and gives the AI a set of
-focused exploration, combat, mining, fitting, navigation, market, and memory
-tools. The goal is simple: spend less time repeating context and more time
-actually playing EVE.
+focused exploration, combat, mining, hauling, fitting, navigation, market, and
+memory tools. The goal is simple: spend less time repeating context and more
+time actually playing EVE.
 
 I normally use it with voice chat left open while I play. When I speak, ChatGPT
 can check where I am, what I am flying, how the ship is fitted, and which skills
@@ -32,19 +32,22 @@ an active expedition.
 
 ## Skills and copilots
 
-EVE Copilot includes focused skills for different parts of the game. Exploration
-and mining also have separate preparation and active copilots, because planning
-in a station and making decisions while exposed in space are very different
-jobs.
+EVE Copilot includes focused skills for different parts of the game.
+Exploration, mining, and hauling also have separate preparation and active
+copilots, because planning in a station and making decisions while exposed in
+space are very different jobs.
 
 | Skill or copilot | What it does |
 |---|---|
 | **EVE Copilot gateway** | Applies the selected in-universe persona to gameplay, lore, and pilot-advisory requests while leaving plugin management, development, and unrelated ChatGPT topics neutral. |
 | **Exploration preparation** | Plans a data or relic expedition around your character, current location, ship, fit, route, risk, and extraction plan. |
 | **Active exploration** | Gives short next-step guidance while you scan, travel, enter sites, watch for danger, retreat, and bring the loot home. |
+| **Wormhole expedition** | Records reported jumps and return bookmarks in temporary character memory, then routes you back to the starting system. |
 | **Combat** | Chooses or reviews PvE and PvP ships using your skills, owned ships, saved fits, budget, environment, and combat goal. |
 | **Mining preparation** | Plans ore, ice, gas, moon, Mercoxit, wormhole, or Pochven operations, including ship choice, fitting, hauling, compression, and escape. |
 | **Active mining** | Helps with immediate cycle, repositioning, threat, evacuation, hauling, and extraction decisions while you are in space. |
+| **Hauling preparation** | Plans a compact personal cargo move using your assets, owned ships, skills, route, trip count, and destination. |
+| **Active hauling** | Gives short hold, jump, dock, wait, reroute, turn-back, and delivery guidance while cargo is in motion. |
 | **Setup** | Installs the local tools and EVE data, then guides you through connecting a character when you want character-aware help. |
 | **Persona** | Changes the copilot's persona between neutral, Amarr, Caldari, Gallente, and Minmatar without changing its facts or advice. |
 | **Uninstall** | Removes the plugin and, if requested, its local character credentials, data, and memory. |
@@ -56,10 +59,12 @@ guide that remembers useful conclusions between conversations.
 Some example questions:
 
 - “Plan a data and relic expedition from where I am now.”
+- “Start a wormhole expedition from my current location.”
 - “Can I actually use this fit with my current skills?”
 - “Improve my current ship without exceeding its CPU or powergrid.”
 - “What should I take for a lowsec exploration run, and what can kill me?”
 - “Prepare a mining trip using ships I already own.”
+- “Move these assets to Jita using a ship I already own.”
 - “Where did I leave my Astero?”
 - “Keep guiding me while I run this site.”
 
@@ -87,8 +92,10 @@ EVE Copilot combines a few useful ideas in one plugin:
   ChatGPT conversations unchanged.
 - **Character context** lets it reason about your location, ship, fitting,
   skills, assets, wallet, and other authorized information.
-- **Dedicated skills** cover exploration, combat, and mining, with separate
-  preparation and live-operation profiles for exploration and mining.
+- **Dedicated skills** cover exploration, temporary wormhole-expedition
+  mapping, combat, mining, and hauling, with separate preparation and
+  live-operation profiles where immediate in-space decisions need a faster
+  response.
 - **Local memory** keeps useful player-specific notes and conclusions available
   for later conversations.
 - **Fitting calculations** give the AI something better than generic fits copied
@@ -266,7 +273,7 @@ codex mcp add eve-copilot -- eve-copilot-mcp serve
 ```
 
 This gives an MCP client access to the tools and resources, but not the complete
-exploration, combat, and mining experience supplied by the plugin.
+exploration, combat, mining, and hauling experience supplied by the plugin.
 
 ## Development
 

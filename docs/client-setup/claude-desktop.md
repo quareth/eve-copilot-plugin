@@ -3,8 +3,9 @@
 EVE Copilot supports two Claude integration levels:
 
 - **Claude Code plugin:** installs the topic-gated EVE gateway plus setup,
-  persona, exploration, combat, and mining skills, four preparation/live
-  subagents, and the local MCP server as one package.
+  persona, exploration, wormhole-expedition, combat, mining, and hauling
+  skills, six preparation/live subagents, and the local MCP server as one
+  package.
 - **Classic Claude Desktop MCP:** exposes the same MCP tools and resources, but
   does not load Claude Code's plugin skills or subagents.
 
@@ -42,11 +43,16 @@ plugin provides:
 - `/eve-copilot:eve-setup`;
 - `/eve-copilot:eve-persona`;
 - `/eve-copilot:eve-exploration`;
+- `/eve-copilot:eve-wormhole-expedition`;
 - `/eve-copilot:eve-combat`;
 - `/eve-copilot:eve-mining`;
+- `/eve-copilot:eve-hauling`;
+- `/eve-copilot:eve-uninstall`;
 - `eve-copilot:eve-exploration-preparation` and
   `eve-copilot:eve-active-exploration` subagents;
 - `eve-copilot:eve-mining-preparation` and `eve-copilot:eve-active-mining`
+  subagents;
+- `eve-copilot:eve-hauling-preparation` and `eve-copilot:eve-active-hauling`
   subagents;
 - the `eve-copilot` MCP server and its tools and resources.
 
@@ -117,7 +123,7 @@ client-version changes may restrict developer-configured local servers.
 
 ## Current smoke checklist
 
-- Confirm the plugin exposes the five namespaced skills and four subagents in
+- Confirm the plugin exposes its nine namespaced skills and six subagents in
   Claude Code. Skip this item for classic Claude Desktop.
 - Confirm the server connects and exposes 65 tools with EVE actions disabled,
   including the three user-specific EVE Guide tools.

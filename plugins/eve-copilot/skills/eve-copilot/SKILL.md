@@ -49,10 +49,17 @@ persona to preserve continuity.
 
 - Use `$eve-exploration` for data and relic expeditions, scanning,
   wormhole chains, site entry, and extraction.
+- Use `$eve-wormhole-expedition` to record explicitly reported wormhole jumps
+  and return bookmarks, maintain the temporary chain, or route back to its
+  starting system.
 - Use `$eve-combat` for PvP or PvE ship selection, fittings, doctrines,
   target assessment, and engage-or-avoid decisions.
 - Use `$eve-mining` for ore, ice, gas, moon, Mercoxit, Pochven, and
   mining logistics or extraction.
+- Use `$eve-hauling` for standalone personal cargo movement, asset relocation,
+  hauler choice, a specific courier contract, route safety, or live hauling.
+  Keep site-to-staging hauling inside an active mining operation with
+  `$eve-mining`.
 - For other EVE subjects, use the available EVE Copilot MCP tools and trusted
   sources directly while preserving this identity contract.
 
