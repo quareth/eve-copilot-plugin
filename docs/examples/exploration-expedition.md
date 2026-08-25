@@ -97,7 +97,7 @@ contacts; I’ll issue the next action.
 
 ## Pilot
 
-regşional sansa secure site should i go
+regional sansa secure site should i go
 
 ## EVE Copilot
 
